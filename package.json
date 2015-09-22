@@ -1,0 +1,29 @@
+{
+  "name": "is-object-really-empty",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "browserify tests/index.js -o bundle.js",
+    "test": "tape bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/is-object-really-empty.git"
+  },
+  "keywords": [
+    "empty",
+    "object",
+    "empty-object"
+  ],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/is-object-really-empty/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/is-object-really-empty#readme",
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "tape": "^4.2.0"
+  }
+}
