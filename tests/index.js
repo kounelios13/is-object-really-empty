@@ -1,7 +1,7 @@
 
 var test = require('tape');
 
-var isEmptyObject = require('../index.js');
+var isEmptyObject = require('../dist/index.es5').default;
 
 test('empty object', function(t) {
 
@@ -34,5 +34,7 @@ test('empty object', function(t) {
   Person.prototype.val = 42;
 
   t.equal(isEmptyObject(new Person()), false, 'empty instance with not empty prototype');
+
+  t.end();
 
 });

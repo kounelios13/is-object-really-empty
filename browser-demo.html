@@ -1,0 +1,23 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>is-object-really-empty</title>
+</head>
+<body>
+  <h1>is-object-really-empty</h1>
+
+  <script src='jspm_packages/system.js'></script>
+  <script src='config.js'></script>
+
+  <script type='text/javascript'>
+    System.import('./index.js').then(function(module) {
+      'use strict';
+
+      const isObjectReallyEmpty = module.default;
+
+      console.log(isObjectReallyEmpty({}), isObjectReallyEmpty({ val: [] })); // true, false
+    });
+  </script>
+
+</body>
+</html>
