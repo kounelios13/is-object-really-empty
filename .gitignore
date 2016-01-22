@@ -1,2 +1,7 @@
-/node_modules
-/bundle.js
+jspm_packages/
+node_modules/
+
+.npmrc
+
+tests/bundle.js
+dist/
